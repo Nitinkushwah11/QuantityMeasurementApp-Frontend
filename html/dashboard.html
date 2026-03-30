@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Quantity Measurement</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link  rel="stylesheet" href="../style/dashboard.css" />
+
+</head>
+<body>
+<div class="header">
+    <h1>Welcome To Quantity Measurement</h1>
+    <img onclick="logout()" class="logout-logo" src="https://img.icons8.com/?size=30&id=82792&format=png&color=ffffff"  alt="logout" />
+    <button class="logout" onclick="logout()">Logout</button>
+</div>
+<div class="app">
+
+
+
+    <div class="body">
+
+        <!-- TYPE -->
+        <div class="section-label">Choose Type</div>
+        <div class="type-grid">
+            <div class="type-card active" data-type="Length">
+                <span class="icon">📏</span><span class="label">Length</span>
+            </div>
+            <div class="type-card" data-type="Weight">
+                <span class="icon">⚖️</span><span class="label">Weight</span>
+            </div>
+            <div class="type-card" data-type="Temperature">
+                <span class="icon">🌡️</span><span class="label">Temperature</span>
+            </div>
+            <div class="type-card" data-type="Volume">
+                <span class="icon">🧪</span><span class="label">Volume</span>
+            </div>
+        </div>
+
+        <!-- ACTION TABS -->
+        <div class="section-label">Choose Action</div>
+        <div class="action-tabs" style="margin-bottom:20px">
+            <button class="tab-btn" data-action="Comparison">Comparison</button>
+            <button class="tab-btn" data-action="Conversion">Conversion</button>
+            <button class="tab-btn active" data-action="Arithmetic">Arithmetic</button>
+        </div>
+
+        <!-- INPUTS -->
+        <div class="inputs-row mode-arithmetic" id="inputsRow">
+            <div id="val1Wrap">
+                <div class="field-label" id="label1">Value 1</div>
+                <input class="num-input" type="number" id="val1" value="1"/>
+                <select class="unit-select" id="unit1"></select>
+            </div>
+
+            <div class="operator-box" id="opBadge" title="Click to change operation">
+                <span id="opSymbol">+</span>
+                <span class="op-hint">tap</span>
+            </div>
+
+            <div id="val2Wrap">
+                <div class="field-label" id="label2">Value 2</div>
+                <input class="num-input" type="number" id="val2" value="1"/>
+                <select class="unit-select" id="unit2"></select>
+            </div>
+        </div>
+
+        <!-- RESULT (hidden until calculate) -->
+        <div class="result-box d-none" id="resultBox">
+            <div>
+                <div class="result-label">Result</div>
+                <div id="result">—</div>
+            </div>
+            <select class="result-unit" id="resultUnit"></select>
+        </div>
+
+    </div>
+</div>
+
+<script src="../js/dashboard.js" ></script>
+</body>
+</html>
