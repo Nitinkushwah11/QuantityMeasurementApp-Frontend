@@ -1,0 +1,25 @@
+
+:root {
+    --primary:       #8b1a1a;
+    --primary-hover: #a52020;
+    --primary-light: #f5e6e6;
+    --tab-active:    #1a1a1a;
+    --tab-inactive:  #9ca3af;
+    --input-border:  #d1d5db;
+    --input-focus:   #8b1a1a;
+    --bg-page:       #d1d5db;
+    --bg-card:       #ffffff;
+    --bg-left:       #ffffff;
+    --bg-right:      #ffffff;
+    --circle-bg:     #a8c8f0;
+    --text-label:    #374151;
+    --text-body:     #6b7280;
+    --error-color:   #dc2626;
+    --success-color: #16a34a;
+    --shadow-card:   0 20px 60px rgba(0,0,0,0.15);
+    --radius-card:   18px;
+    --radius-input:  8px;
+    --font-display:  'Playfair Display', serif;
+    --font-body:     'DM Sans', sans-serif;
+    --transition:    0.25s ease;
+}

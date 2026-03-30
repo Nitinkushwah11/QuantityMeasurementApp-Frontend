@@ -1,0 +1,50 @@
+
+.submit-btn {
+    margin-top: 6px;
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: #fff;
+    background: var(--primary);
+    border: none;
+    border-radius: var(--radius-input);
+    padding: 13px;
+    cursor: pointer;
+    width: 100%;
+    transition: background var(--transition), transform 0.15s ease, box-shadow var(--transition);
+    box-shadow: 0 4px 14px rgba(139, 26, 26, 0.3);
+}
+
+.submit-btn:hover {
+    background: var(--primary-hover);
+    box-shadow: 0 6px 20px rgba(139, 26, 26, 0.4);
+    transform: translateY(-1px);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+.submit-btn:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.switch-text {
+    font-size: 13px;
+    color: var(--text-body);
+    text-align: center;
+    margin-top: 2px;
+}
+
+.switch-text a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.switch-text a:hover {
+    text-decoration: underline;
+}
