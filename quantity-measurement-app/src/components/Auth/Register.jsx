@@ -31,8 +31,8 @@ const Register = () => {
       return;
     }
 
-    if (!/^(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=!]).{6,}$/.test(password)) {
-      setError('Password must contain uppercase, lowercase, special character, and be at least 6 characters');
+    if (!/^(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=!]).{8,}$/.test(password)) {
+      setError('Password must contain uppercase, lowercase, special character, and be at least 8 characters');
       return;
     }
 

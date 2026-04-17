@@ -30,7 +30,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   const register = async (fullName, email, mobileNumber, password) => {
-    return authService.register(fullName, email, mobileNumber, password);
+    return authService.register(fullName, email, password);
   };
 
   const oauthLogin = (accessToken, email, fullName) => {
